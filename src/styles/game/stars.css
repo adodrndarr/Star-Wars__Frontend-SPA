@@ -1,0 +1,25 @@
+.stars {
+    min-height: 240px;
+    color: red;
+}
+.stars:hover {
+    cursor: var(--sw-cursor-green), auto;
+}
+
+.star {
+    display: inline-block;
+    margin: 0 15px;
+}
+.star:hover:after {
+    opacity: 80%;
+    cursor: var(--sw-cursor-green), auto;
+}
+.star:active {
+    box-shadow: 2px 2px 2px 4px greenyellow;
+    transform: translateY(5px);
+}
+
+.star:after {
+    content: "\2605";
+    font-size: 45px;
+}

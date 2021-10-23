@@ -1,0 +1,7 @@
+@import url("./general.css");
+@import url("./game/animations.css");
+@import url("./game/game.css");
+@import url("./game/buttons.css");
+@import url("./game/scoreboard.css");
+@import url("./game/stars.css");
+@import url("./responsiveness.css");

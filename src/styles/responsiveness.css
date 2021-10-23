@@ -1,0 +1,17 @@
+@media screen and (max-width: 425px) {
+    .game-main-content {
+        flex-direction: column;
+    }
+
+    html,
+    body,
+    #root {
+        height: fit-content;
+        overflow: auto;
+    }
+
+    .timer {
+        justify-content: center;
+        text-align: center;
+    }
+}

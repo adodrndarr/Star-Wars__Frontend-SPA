@@ -1,0 +1,76 @@
+.game {
+    height: 100%;
+    max-width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+}
+
+.game > h1 {
+    min-height: 37px;
+    color: greenyellow;
+    font-weight: bold;
+}
+
+.game-explanation {
+    color: yellow;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+
+    animation: shake 4s ease-in-out 0s infinite alternate;
+}
+
+.game-explanation:hover {
+    opacity: 90%;
+}
+
+.game-main-content {
+    color: #333;
+    display: flex;
+}
+
+.game-done .message {
+    font-size: 250%;
+    font-weight: bold;
+    margin: 15px;
+    animation: pulse 1s ease-in 0s infinite;
+}
+
+.g-ui {
+    text-align: center;
+    width: 250px;
+    max-height: 50%;
+}
+
+.g-numbers {
+    text-align: center;
+    padding: 10px;
+    width: 250px;
+    min-width: 156px;
+}
+
+.g-numbers:hover {
+    cursor: var(--sw-cursor-green), auto;
+}
+
+.timer {
+    color: rgb(134, 187, 248);
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.timer-secs {
+    animation: pulse 1s ease-in 0s infinite;
+}

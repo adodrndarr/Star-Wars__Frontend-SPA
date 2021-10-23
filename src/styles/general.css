@@ -1,0 +1,30 @@
+:root {
+    --bg-url: url("../styles/imgs/bg-star-wars.jpg");
+    --sw-cursor-green: url("../styles/imgs/s-green.cur");
+    --sw-cursor-red: url("../styles/imgs/s-red.cur");
+}
+
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+    background: var(--bg-url) no-repeat center center fixed;
+    background-size: cover;
+    cursor: var(--sw-cursor-red), auto;
+    overflow: auto;
+    overflow-y: hidden;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.color-green {
+    color: greenyellow;
+}
+.color-red {
+    color: red;
+}

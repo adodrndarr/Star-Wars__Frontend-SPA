@@ -1,0 +1,27 @@
+.scoreboard h2 {
+    color: wheat;
+}
+
+.scoreboard h1 {
+    color: aqua;
+}
+
+.scoreboard h1:first-child {
+    text-align: center;
+}
+
+.scoreboard h1:nth-child(5),
+.scoreboard h1:nth-child(4) {
+    text-align: center;
+}
+
+.scoreboard button {
+    min-width: 147px;
+}
+
+.scoreboard div {
+    min-height: 106px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

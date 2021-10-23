@@ -1,0 +1,81 @@
+.scoreboard button,
+.btn-playAgain {
+    position: relative;
+    margin-top: 10%;
+    padding: 0.75em;
+    color: whitesmoke;
+    background: linear-gradient(45deg, black, black, black, #48ff00, black, #f11616, black, black, black);
+    opacity: 0.9;
+
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5%;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid whitesmoke;
+}
+
+.scoreboard button:hover,
+.btn-playAgain:hover {
+    cursor: var(--sw-cursor-green), auto;
+    transform: scale(1.1);
+    border-radius: 10%;
+    border: none;
+}
+
+.scoreboard button::before,
+.scoreboard button::after,
+.btn-playAgain:before,
+.btn-playAgain:after {
+    transition: all 0.5s;
+    content: "";
+    height: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.scoreboard button:before,
+.btn-playAgain:before {
+    right: 0;
+    top: -4px;
+}
+
+.scoreboard button:after,
+.btn-playAgain:after {
+    bottom: -4px;
+    left: 0;
+}
+
+.scoreboard button:hover::before,
+.btn-playAgain:hover:before {
+    border-bottom: 2px solid greenyellow;
+    width: 100%;
+}
+
+.scoreboard button:hover::after,
+.btn-playAgain:hover:after {
+    border-top: 2px solid red;
+    width: 100%;
+}
+
+.number {
+    color: yellow;
+    border: thin solid whitesmoke;
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+    font-size: 25px;
+    border-radius: 50%;
+}
+
+.number:focus,
+.number:active {
+    outline: none;
+    border: thin solid whitesmoke;
+}
+
+.number:hover {
+    cursor: var(--sw-cursor-green), auto;
+    box-shadow: 2px 2px 2px 4px greenyellow;
+    opacity: 90%;
+}
