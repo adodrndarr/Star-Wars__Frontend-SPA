@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import If from '../../shared/If';
 import getSharedFunctionality from '../../shared/getSharedFunctionality';
 
-const Leaderboard = (props) => {
+const Scoreboard = (props) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => props.saveStats(props.status), []);
 
@@ -50,4 +50,4 @@ const Leaderboard = (props) => {
     </div>
 };
 
-export default Leaderboard;
+export default Scoreboard;
