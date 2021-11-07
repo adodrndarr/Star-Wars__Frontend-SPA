@@ -1,4 +1,4 @@
-const If = ({ rIf, children }) => {
+function If({ rIf, children }) {
     if (!rIf)
         return null;
 

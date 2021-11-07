@@ -18,7 +18,7 @@ const utils = {
             for (let j = 0, len = sets.length; j < len; j++) {
                 const candidateSet = sets[j].concat(arr[i]);
                 const candidateSum = utils.sum(candidateSet);
-                
+
                 if (candidateSum <= max) {
                     sets.push(candidateSet);
                     sums.push(candidateSum);

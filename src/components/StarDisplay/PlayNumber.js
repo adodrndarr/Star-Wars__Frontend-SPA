@@ -1,22 +1,22 @@
 import * as React from 'react';
+import getSharedFunctionality from '../../shared/getSharedFunctionality';
+import { useContext } from 'react';
+import { GameContext } from '../Game/Game';
 
-const colors = {
-    available: 'black',
-    used: 'green',
-    wrong: 'red',
-    candidate: 'deepskyblue',
-};
+function PlayNumber({ number }) {
+    const { getNumberStatus, changeGameState } = useContext(GameContext);
+    const status = getNumberStatus(number);
 
-const PlayNumber = props => {
-    const changeGameStatus = () => props.onClick(props.number, props.status);
+    const changeGameStatus = () => changeGameState(number, status);
+    const { COLORS } = getSharedFunctionality();
 
     return <>
         <button
             className="number"
-            style={{ backgroundColor: colors[props.status] }}
+            style={{ backgroundColor: COLORS[status] }}
             onClick={changeGameStatus}
         >
-            {props.number}
+            {number}
         </button>
     </>
 };
