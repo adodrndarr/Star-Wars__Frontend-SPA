@@ -1,4 +1,3 @@
-import * as React from 'react';
 import getSharedFunctionality from '../../shared/getSharedFunctionality';
 import { useContext } from 'react';
 import { GameContext } from '../Game/Game';

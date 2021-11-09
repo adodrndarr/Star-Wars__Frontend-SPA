@@ -1,9 +1,8 @@
-import { useEffect } from 'react';
+import { useEffect, useContext } from 'react';
 import If from '../../shared/If';
 import GameAudio from '../GameSettings/GameAudio';
 import ScoreInfo from './ScoreInfo';
 import WinInfo from './WinInfo';
-import { useContext } from 'react';
 import { AppContext } from '../../App';
 import { GameContext } from '../Game/Game';
 

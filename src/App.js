@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { createContext } from 'react';
 import Game from './components/Game/Game';
 import StarWarsSongUrl from './shared/audio/star-wars-song.mp3';

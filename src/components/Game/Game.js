@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { useContext, createContext } from 'react';
 import Scoreboard from '../Scoreboard/Scoreboard';
 import UseGameState from '../../hooks/UseGameState';
 import getSharedFunctionality from '../../shared/getSharedFunctionality';
@@ -6,9 +6,7 @@ import GameUI from './GameUI';
 import GameNumbers from './GameNumbers';
 import Timer from '../GameSettings/Timer';
 import GameInfo from '../GameSettings/GameInfo';
-import { useContext } from 'react';
 import { AppContext } from '../../App';
-import { createContext } from 'react';
 
 export const GameContext = createContext();
 
