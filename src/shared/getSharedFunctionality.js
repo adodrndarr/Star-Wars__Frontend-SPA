@@ -13,6 +13,22 @@ function getSharedFunctionality() {
         return chosenMsg;
     }
 
+    const getNewNumberOfStars = (currentStars, newAvailableNums) => {
+        let randomSum = 0, newAttempts = 0;
+        let sameStars = false, shouldRetry = false;
+
+        do {
+            randomSum = utils.randomSumIn(newAvailableNums, 9);
+
+            sameStars = (currentStars === randomSum);
+            shouldRetry = (newAttempts < 100);
+            newAttempts++;
+
+        } while (sameStars && shouldRetry);
+
+        return randomSum;
+    }
+
     const getTimeTxt = (time) => {
         if (time > 1)
             return 'Star War secs';
@@ -44,7 +60,7 @@ function getSharedFunctionality() {
         USED: `used`
     };
 
-    return { GAME_STATUS, NUMBER_STATUS, COLORS, getTimeTxt, getSWtoolTipTxt, getMotivatingMessage };
+    return { GAME_STATUS, NUMBER_STATUS, COLORS, getTimeTxt, getSWtoolTipTxt, getMotivatingMessage, getNewNumberOfStars };
 };
 
 export default getSharedFunctionality;

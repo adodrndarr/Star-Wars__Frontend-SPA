@@ -3,7 +3,7 @@ import utils from '../utils/math-utils';
 import getSharedFunctionality from '../shared/getSharedFunctionality';
 
 function UseGameState() {
-    const { GAME_STATUS, NUMBER_STATUS, getMotivatingMessage } = getSharedFunctionality();
+    const { GAME_STATUS, NUMBER_STATUS, getMotivatingMessage, getNewNumberOfStars } = getSharedFunctionality();
 
     const [stars, setStars] = useState(utils.random(1, 9));
     const [availableNums, setAvailableNums] = useState(utils.range(1, 9));
@@ -27,7 +27,8 @@ function UseGameState() {
         }
 
         const newAvailableNums = availableNums.filter(n => !newCandidateNums.includes(n));
-        setStars(utils.randomSumIn(newAvailableNums, 9));
+
+        setStars(getNewNumberOfStars(stars, newAvailableNums));
         setAvailableNums(newAvailableNums);
         setCandidateNums([]);
 
