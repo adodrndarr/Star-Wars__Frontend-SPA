@@ -6,8 +6,8 @@ Feel free to play a game or two and experience the Force in real time -> https:/
 
 Small Game React Application to practice some basic features of the library like:
 
--components
--property/event binding
--effects
--context API
--state management and overall project organization.
+- components
+- property/event binding
+- effects
+- context API
+- state management and overall project organization.
